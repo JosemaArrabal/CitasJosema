@@ -30,7 +30,7 @@ class QuoteRepo {
             ),
 
             ).withDefault { QuoteModel("", "") }
-        return quoteMap[Random.nextInt(1,quoteMap.size)]
+        return quoteMap[Random.nextInt(1, quoteMap.size + 1)]
     }
 
 }

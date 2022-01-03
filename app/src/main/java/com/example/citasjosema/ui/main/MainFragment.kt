@@ -31,8 +31,8 @@ class MainFragment : Fragment() {
         }
         quoteViewModel.constQuote.observe(viewLifecycleOwner, { quoteModel ->
             quoteModel?.let {
-                binding.mainQuote.text = it.quote
-                binding.mainQuoteAuthor.text = it.author
+                binding.mainQuoteTextView.text = it.quote
+                binding.mainQuoteAuthorTextView.text = it.author
             }
         })
     }

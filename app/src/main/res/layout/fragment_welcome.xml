@@ -5,27 +5,27 @@
     android:id="@+id/welcomeFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/libros"
+    android:background="@drawable/bg_library"
     tools:context=".ui.welcome.WelcomeFragment">
 
 
     <Button
-        android:id="@+id/welcome_button"
+        android:id="@+id/welcome_main_button"
         android:layout_width="215dp"
         android:layout_height="63dp"
+        android:text="@string/text_main_start_button"
         android:textSize="30sp"
-        android:text="@string/iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_textView" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome_main_textView" />
 
     <TextView
-        android:id="@+id/welcome_textView"
+        android:id="@+id/welcome_main_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="@string/mis_citas_celebres"
+        android:text="@string/text_main_title_textView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

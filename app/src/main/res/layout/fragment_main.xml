@@ -9,7 +9,7 @@
     tools:context=".ui.main.MainFragment">
 
     <TextView
-        android:id="@+id/main_quote"
+        android:id="@+id/main_quote_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_blank_fragment"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.258" />
 
     <TextView
-        android:id="@+id/main_quote_author"
+        android:id="@+id/main_quote_author_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_blank_fragment"
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_quote"
+        app:layout_constraintTop_toBottomOf="@+id/main_quote_textView"
         app:layout_constraintVertical_bias="0.49" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

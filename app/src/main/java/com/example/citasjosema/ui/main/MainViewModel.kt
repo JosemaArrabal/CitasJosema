@@ -6,14 +6,12 @@ import androidx.lifecycle.ViewModel
 import com.example.citasjosema.model.QuoteModel
 import com.example.citasjosema.repo.QuoteRepo
 
-class MainViewModel : ViewModel() {
+class MainViewModel(private val quoteRepo: QuoteRepo) : ViewModel() {
 
-    private val quoteRepo = QuoteRepo()
-
-    private val _constQuoteModel = MutableLiveData <QuoteModel?>()
+    private val _constQuoteModel = MutableLiveData<QuoteModel?>()
     val constQuote: LiveData<QuoteModel?> = _constQuoteModel
 
-    fun getQuote(){
+    fun getQuote() {
         _constQuoteModel.value = quoteRepo.getQuoteModel()
     }
 
